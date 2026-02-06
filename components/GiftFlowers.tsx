@@ -12,31 +12,31 @@ const GiftFlowers: React.FC<GiftFlowersProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="flex flex-col items-center h-full p-4 pt-10 relative">
-      <h1 className="text-5xl font-hand font-bold text-val-red mb-12 text-center px-6">
+    <div className="flex flex-col items-center h-full p-4 pt-10 relative overflow-y-auto">
+      <h1 className="text-4xl md:text-5xl font-hand font-bold text-val-red mb-8 text-center px-6">
         Your Rose Bouquet 🌹
       </h1>
 
-      <div className="flex-1 flex flex-col items-center justify-center w-full max-w-4xl gap-4 relative">
+      <div className="flex-1 flex flex-col items-center justify-start md:justify-center w-full max-w-4xl gap-8 relative">
         
         {/* Center Image */}
         <div className="relative flex justify-center z-10">
             <div className="absolute inset-0 bg-white/30 rounded-full blur-3xl transform scale-75"></div>
             
             {/* Bouquet Illustration with Theme Border */}
-            <div className="transform rotate-1 hover:scale-105 transition-transform duration-500 bg-white p-3 rounded-[2rem] border-4 border-val-pink shadow-lg">
+            <div className="transform hover:scale-105 transition-transform duration-500 bg-white p-3 rounded-[2rem] border-4 border-val-pink shadow-lg">
                  <img 
                     src={imgSrc}
                     onError={handleImgError}
                     alt="Rose Bouquet"
-                    className="w-80 object-contain rounded-2xl"
+                    className="w-64 md:w-80 object-contain rounded-2xl"
                  />
             </div>
         </div>
 
-        {/* Big Paragraph Underneath - Moved upward with negative margin and reduced gap */}
-        <div className="max-w-xl mx-auto px-6 py-4 bg-white/40 rounded-2xl border-2 border-val-pink/50 backdrop-blur-sm transform -rotate-1 shadow-sm -mt-28 z-20">
-          <p className="text-3xl font-hand leading-relaxed text-val-dark text-center">
+        {/* Big Paragraph Underneath - Rotation removed, centered and neatly spaced */}
+        <div className="max-w-xl mx-auto px-6 py-6 bg-white/50 rounded-2xl border-2 border-val-pink/50 backdrop-blur-sm shadow-sm z-20">
+          <p className="text-2xl md:text-3xl font-hand leading-relaxed text-val-dark text-center">
             Happy Rose Day 🌹, my baby 🎀! I wish I could give you this in person, but please adjust to this for now. I love you so much ❤️💗
           </p>
         </div>
@@ -45,7 +45,7 @@ const GiftFlowers: React.FC<GiftFlowersProps> = ({ onBack }) => {
 
       <button 
         onClick={onBack}
-        className="absolute bottom-8 right-8 text-val-dark font-hand font-bold text-xl hover:scale-110 transition-transform flex items-center gap-2"
+        className="mt-8 mb-8 md:absolute md:bottom-8 md:right-8 text-val-dark font-hand font-bold text-xl hover:scale-110 transition-transform flex items-center gap-2"
       >
         <span>click me to go back</span>
         <span className="text-2xl">↩</span>
