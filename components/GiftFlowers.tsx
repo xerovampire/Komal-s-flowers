@@ -35,7 +35,7 @@ const GiftFlowers: React.FC<GiftFlowersProps> = ({ onBack }) => {
         </div>
 
         {/* Big Paragraph Underneath - Moved upward with negative margin and reduced gap */}
-        <div className="max-w-xl mx-auto px-6 py-4 bg-white/40 rounded-2xl border-2 border-val-pink/50 backdrop-blur-sm transform -rotate-1 shadow-sm -mt-6 z-20">
+        <div className="max-w-xl mx-auto px-6 py-4 bg-white/40 rounded-2xl border-2 border-val-pink/50 backdrop-blur-sm transform -rotate-1 shadow-sm -mt-10 z-20">
           <p className="text-3xl font-hand leading-relaxed text-val-dark text-center">
             Happy Rose Day 🌹, my baby 🎀! I wish I could give you this in person, but please adjust to this for now. I love you so much ❤️💗
           </p>
